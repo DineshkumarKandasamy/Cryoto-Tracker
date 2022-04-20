@@ -7,23 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0F937E280D810F00652C1C /* Currencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F937D280D810F00652C1C /* Currencies.swift */; };
+		5C0F9386280D8C3B00652C1C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F9385280D8C3B00652C1C /* WebService.swift */; };
+		5C0F9388280D8ECA00652C1C /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F9387280D8ECA00652C1C /* NetworkRequest.swift */; };
+		5C0F938A280DA09F00652C1C /* CoinsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F9389280DA09F00652C1C /* CoinsViewModel.swift */; };
+		5C38F69D280EA29500DB20EF /* CoinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38F69B280EA29500DB20EF /* CoinCollectionViewCell.swift */; };
+		5C38F69E280EA29500DB20EF /* CoinCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C38F69C280EA29500DB20EF /* CoinCollectionViewCell.xib */; };
+		5C38F6A1280EDE4900DB20EF /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38F6A0280EDE4900DB20EF /* UIImageView+Extension.swift */; };
+		5C38F6A4280EE8D600DB20EF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38F6A3280EE8D600DB20EF /* Model.swift */; };
+		5C38F6A6280EE8FD00DB20EF /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38F6A5280EE8FD00DB20EF /* MarketViewController.swift */; };
+		5C38F6AB280EE94D00DB20EF /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38F6AA280EE94D00DB20EF /* MarketViewModel.swift */; };
+		5C38F6AF280EEBCA00DB20EF /* MarketCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C38F6AD280EEBCA00DB20EF /* MarketCollectionViewCell.swift */; };
+		5C38F6B0280EEBCA00DB20EF /* MarketCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C38F6AE280EEBCA00DB20EF /* MarketCollectionViewCell.xib */; };
 		5CBC7389280D571500E1A6C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC7388280D571500E1A6C2 /* AppDelegate.swift */; };
 		5CBC738B280D571500E1A6C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC738A280D571500E1A6C2 /* SceneDelegate.swift */; };
-		5CBC738D280D571500E1A6C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC738C280D571500E1A6C2 /* ViewController.swift */; };
+		5CBC738D280D571500E1A6C2 /* CoinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBC738C280D571500E1A6C2 /* CoinsViewController.swift */; };
 		5CBC7390280D571500E1A6C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBC738E280D571500E1A6C2 /* Main.storyboard */; };
 		5CBC7392280D571500E1A6C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CBC7391280D571500E1A6C2 /* Assets.xcassets */; };
 		5CBC7395280D571500E1A6C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBC7393280D571500E1A6C2 /* LaunchScreen.storyboard */; };
+		5CEEBB68280FE463001CD576 /* CurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEBB67280FE463001CD576 /* CurrenciesViewController.swift */; };
+		5CEEBB6F280FF6C8001CD576 /* ExchangesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEBB6E280FF6C8001CD576 /* ExchangesViewController.swift */; };
+		5CEEBB71280FF836001CD576 /* ExchangesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEBB70280FF836001CD576 /* ExchangesModel.swift */; };
+		5CEEBB73280FFB4C001CD576 /* ExchangesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEBB72280FFB4C001CD576 /* ExchangesViewModel.swift */; };
+		5CEEBB77280FFD6D001CD576 /* ExchangeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEBB75280FFD6D001CD576 /* ExchangeCollectionViewCell.swift */; };
+		5CEEBB78280FFD6D001CD576 /* ExchangeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CEEBB76280FFD6D001CD576 /* ExchangeCollectionViewCell.xib */; };
+		5CF6A645280F29B000E8806B /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A644280F29B000E8806B /* NewsModel.swift */; };
+		5CF6A647280F29C200E8806B /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A646280F29C200E8806B /* NewsViewModel.swift */; };
+		5CF6A649280F29E400E8806B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF6A648280F29E400E8806B /* NewsViewController.swift */; };
+		9248F7054F1EA771CDD9381B /* Pods_Task2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1EE2DC1C2B3F557C074EDA /* Pods_Task2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D63B7467CA90DB23E7A46AE /* Pods-Task2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task2.release.xcconfig"; path = "Target Support Files/Pods-Task2/Pods-Task2.release.xcconfig"; sourceTree = "<group>"; };
+		5C0F937D280D810F00652C1C /* Currencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currencies.swift; sourceTree = "<group>"; };
+		5C0F9385280D8C3B00652C1C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		5C0F9387280D8ECA00652C1C /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		5C0F9389280DA09F00652C1C /* CoinsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewModel.swift; sourceTree = "<group>"; };
+		5C38F69B280EA29500DB20EF /* CoinCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCollectionViewCell.swift; sourceTree = "<group>"; };
+		5C38F69C280EA29500DB20EF /* CoinCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinCollectionViewCell.xib; sourceTree = "<group>"; };
+		5C38F6A0280EDE4900DB20EF /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		5C38F6A3280EE8D600DB20EF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5C38F6A5280EE8FD00DB20EF /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		5C38F6AA280EE94D00DB20EF /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		5C38F6AD280EEBCA00DB20EF /* MarketCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCollectionViewCell.swift; sourceTree = "<group>"; };
+		5C38F6AE280EEBCA00DB20EF /* MarketCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketCollectionViewCell.xib; sourceTree = "<group>"; };
 		5CBC7385280D571500E1A6C2 /* Task2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBC7388280D571500E1A6C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CBC738A280D571500E1A6C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5CBC738C280D571500E1A6C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CBC738C280D571500E1A6C2 /* CoinsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewController.swift; sourceTree = "<group>"; };
 		5CBC738F280D571500E1A6C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CBC7391280D571500E1A6C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CBC7394280D571500E1A6C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CBC7396280D571500E1A6C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CEEBB67280FE463001CD576 /* CurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewController.swift; sourceTree = "<group>"; };
+		5CEEBB6E280FF6C8001CD576 /* ExchangesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesViewController.swift; sourceTree = "<group>"; };
+		5CEEBB70280FF836001CD576 /* ExchangesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesModel.swift; sourceTree = "<group>"; };
+		5CEEBB72280FFB4C001CD576 /* ExchangesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesViewModel.swift; sourceTree = "<group>"; };
+		5CEEBB75280FFD6D001CD576 /* ExchangeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCollectionViewCell.swift; sourceTree = "<group>"; };
+		5CEEBB76280FFD6D001CD576 /* ExchangeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeCollectionViewCell.xib; sourceTree = "<group>"; };
+		5CF6A644280F29B000E8806B /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		5CF6A646280F29C200E8806B /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		5CF6A648280F29E400E8806B /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		7DA4FCFAD97F32A385FDE204 /* Pods-Task2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task2.debug.xcconfig"; path = "Target Support Files/Pods-Task2/Pods-Task2.debug.xcconfig"; sourceTree = "<group>"; };
+		DF1EE2DC1C2B3F557C074EDA /* Pods_Task2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Task2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +77,115 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9248F7054F1EA771CDD9381B /* Pods_Task2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C0F937F280D81D400652C1C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5C38F69B280EA29500DB20EF /* CoinCollectionViewCell.swift */,
+				5C38F69C280EA29500DB20EF /* CoinCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5C0F9384280D8C2700652C1C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5C0F9385280D8C3B00652C1C /* WebService.swift */,
+				5C0F9387280D8ECA00652C1C /* NetworkRequest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5C38F69F280EDE3600DB20EF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5C38F6A0280EDE4900DB20EF /* UIImageView+Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5C38F6A2280EE8AF00DB20EF /* Market Module */ = {
+			isa = PBXGroup;
+			children = (
+				5C38F6A7280EE90800DB20EF /* Model */,
+				5C38F6A8280EE91600DB20EF /* View */,
+				5C38F6A9280EE93500DB20EF /* ViewModel */,
+			);
+			path = "Market Module";
+			sourceTree = "<group>";
+		};
+		5C38F6A7280EE90800DB20EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C38F6A3280EE8D600DB20EF /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C38F6A8280EE91600DB20EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C38F6AC280EEBB100DB20EF /* cell */,
+				5C38F6A5280EE8FD00DB20EF /* MarketViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C38F6A9280EE93500DB20EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5C38F6AA280EE94D00DB20EF /* MarketViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5C38F6AC280EEBB100DB20EF /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				5C38F6AD280EEBCA00DB20EF /* MarketCollectionViewCell.swift */,
+				5C38F6AE280EEBCA00DB20EF /* MarketCollectionViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		5C3930C7280FE29F00415CAB /* CurrenciesModule */ = {
+			isa = PBXGroup;
+			children = (
+				5CEEBB69280FE6DE001CD576 /* Model */,
+				5C3930C9280FE2C600415CAB /* View */,
+				5C3930C8280FE2B400415CAB /* ViewModel */,
+			);
+			path = CurrenciesModule;
+			sourceTree = "<group>";
+		};
+		5C3930C8280FE2B400415CAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5C3930C9280FE2C600415CAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CEEBB67280FE463001CD576 /* CurrenciesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5CBC737C280D571400E1A6C2 = {
 			isa = PBXGroup;
 			children = (
 				5CBC7387280D571500E1A6C2 /* Task2 */,
 				5CBC7386280D571500E1A6C2 /* Products */,
+				F0452BDAC414B5F2ED05A52A /* Pods */,
+				C8775FADF0F2CB25797B0483 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +200,158 @@
 		5CBC7387280D571500E1A6C2 /* Task2 */ = {
 			isa = PBXGroup;
 			children = (
+				5C3930C7280FE29F00415CAB /* CurrenciesModule */,
 				5CBC7388280D571500E1A6C2 /* AppDelegate.swift */,
 				5CBC738A280D571500E1A6C2 /* SceneDelegate.swift */,
-				5CBC738C280D571500E1A6C2 /* ViewController.swift */,
+				5C38F69F280EDE3600DB20EF /* Helper */,
+				5C0F9384280D8C2700652C1C /* Service */,
+				5CBC739D280D573700E1A6C2 /* Coin Module */,
+				5CEEBB6A280FF68F001CD576 /* ExchangeModule */,
+				5C38F6A2280EE8AF00DB20EF /* Market Module */,
+				5CF6A640280F296900E8806B /* News Module */,
 				5CBC738E280D571500E1A6C2 /* Main.storyboard */,
 				5CBC7391280D571500E1A6C2 /* Assets.xcassets */,
 				5CBC7393280D571500E1A6C2 /* LaunchScreen.storyboard */,
 				5CBC7396280D571500E1A6C2 /* Info.plist */,
 			);
 			path = Task2;
+			sourceTree = "<group>";
+		};
+		5CBC739C280D572A00E1A6C2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5C0F9389280DA09F00652C1C /* CoinsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5CBC739D280D573700E1A6C2 /* Coin Module */ = {
+			isa = PBXGroup;
+			children = (
+				5CBC739E280D576D00E1A6C2 /* Model */,
+				5CBC739F280D577200E1A6C2 /* View */,
+				5CBC739C280D572A00E1A6C2 /* ViewModel */,
+			);
+			path = "Coin Module";
+			sourceTree = "<group>";
+		};
+		5CBC739E280D576D00E1A6C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C0F937D280D810F00652C1C /* Currencies.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CBC739F280D577200E1A6C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C0F937F280D81D400652C1C /* Cell */,
+				5CBC738C280D571500E1A6C2 /* CoinsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CEEBB69280FE6DE001CD576 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CEEBB6A280FF68F001CD576 /* ExchangeModule */ = {
+			isa = PBXGroup;
+			children = (
+				5CEEBB6D280FF6AD001CD576 /* ViewModel */,
+				5CEEBB6C280FF6A7001CD576 /* View */,
+				5CEEBB6B280FF6A0001CD576 /* Model */,
+			);
+			path = ExchangeModule;
+			sourceTree = "<group>";
+		};
+		5CEEBB6B280FF6A0001CD576 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CEEBB70280FF836001CD576 /* ExchangesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CEEBB6C280FF6A7001CD576 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CEEBB74280FFD52001CD576 /* cell */,
+				5CEEBB6E280FF6C8001CD576 /* ExchangesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CEEBB6D280FF6AD001CD576 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5CEEBB72280FFB4C001CD576 /* ExchangesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5CEEBB74280FFD52001CD576 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				5CEEBB75280FFD6D001CD576 /* ExchangeCollectionViewCell.swift */,
+				5CEEBB76280FFD6D001CD576 /* ExchangeCollectionViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		5CF6A640280F296900E8806B /* News Module */ = {
+			isa = PBXGroup;
+			children = (
+				5CF6A642280F298000E8806B /* View */,
+				5CF6A643280F298500E8806B /* ViewModel */,
+				5CF6A641280F297900E8806B /* Model */,
+			);
+			path = "News Module";
+			sourceTree = "<group>";
+		};
+		5CF6A641280F297900E8806B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CF6A644280F29B000E8806B /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CF6A642280F298000E8806B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CF6A648280F29E400E8806B /* NewsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CF6A643280F298500E8806B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5CF6A646280F29C200E8806B /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C8775FADF0F2CB25797B0483 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF1EE2DC1C2B3F557C074EDA /* Pods_Task2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0452BDAC414B5F2ED05A52A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DA4FCFAD97F32A385FDE204 /* Pods-Task2.debug.xcconfig */,
+				1D63B7467CA90DB23E7A46AE /* Pods-Task2.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +361,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CBC7399280D571500E1A6C2 /* Build configuration list for PBXNativeTarget "Task2" */;
 			buildPhases = (
+				1E0664F020264DC5FF93E3B9 /* [CP] Check Pods Manifest.lock */,
 				5CBC7381280D571500E1A6C2 /* Sources */,
 				5CBC7382280D571500E1A6C2 /* Frameworks */,
 				5CBC7383280D571500E1A6C2 /* Resources */,
+				129FCA9F872E27D27C27EC18 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,19 +417,82 @@
 				5CBC7395280D571500E1A6C2 /* LaunchScreen.storyboard in Resources */,
 				5CBC7392280D571500E1A6C2 /* Assets.xcassets in Resources */,
 				5CBC7390280D571500E1A6C2 /* Main.storyboard in Resources */,
+				5CEEBB78280FFD6D001CD576 /* ExchangeCollectionViewCell.xib in Resources */,
+				5C38F6B0280EEBCA00DB20EF /* MarketCollectionViewCell.xib in Resources */,
+				5C38F69E280EA29500DB20EF /* CoinCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		129FCA9F872E27D27C27EC18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Task2/Pods-Task2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Task2/Pods-Task2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Task2/Pods-Task2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E0664F020264DC5FF93E3B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Task2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5CBC7381280D571500E1A6C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CBC738D280D571500E1A6C2 /* ViewController.swift in Sources */,
+				5C0F9388280D8ECA00652C1C /* NetworkRequest.swift in Sources */,
+				5CEEBB71280FF836001CD576 /* ExchangesModel.swift in Sources */,
+				5CEEBB68280FE463001CD576 /* CurrenciesViewController.swift in Sources */,
+				5C0F9386280D8C3B00652C1C /* WebService.swift in Sources */,
+				5C0F938A280DA09F00652C1C /* CoinsViewModel.swift in Sources */,
+				5CEEBB77280FFD6D001CD576 /* ExchangeCollectionViewCell.swift in Sources */,
+				5C38F6A1280EDE4900DB20EF /* UIImageView+Extension.swift in Sources */,
+				5CF6A645280F29B000E8806B /* NewsModel.swift in Sources */,
+				5CBC738D280D571500E1A6C2 /* CoinsViewController.swift in Sources */,
+				5C38F6A4280EE8D600DB20EF /* Model.swift in Sources */,
+				5CF6A647280F29C200E8806B /* NewsViewModel.swift in Sources */,
 				5CBC7389280D571500E1A6C2 /* AppDelegate.swift in Sources */,
+				5C0F937E280D810F00652C1C /* Currencies.swift in Sources */,
 				5CBC738B280D571500E1A6C2 /* SceneDelegate.swift in Sources */,
+				5CEEBB73280FFB4C001CD576 /* ExchangesViewModel.swift in Sources */,
+				5C38F6A6280EE8FD00DB20EF /* MarketViewController.swift in Sources */,
+				5CEEBB6F280FF6C8001CD576 /* ExchangesViewController.swift in Sources */,
+				5C38F69D280EA29500DB20EF /* CoinCollectionViewCell.swift in Sources */,
+				5C38F6AF280EEBCA00DB20EF /* MarketCollectionViewCell.swift in Sources */,
+				5C38F6AB280EE94D00DB20EF /* MarketViewModel.swift in Sources */,
+				5CF6A649280F29E400E8806B /* NewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +634,7 @@
 		};
 		5CBC739A280D571500E1A6C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA4FCFAD97F32A385FDE204 /* Pods-Task2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +643,7 @@
 				DEVELOPMENT_TEAM = X6WK5UKJ63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Task2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CryptoView;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -310,6 +664,7 @@
 		};
 		5CBC739B280D571500E1A6C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D63B7467CA90DB23E7A46AE /* Pods-Task2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +673,7 @@
 				DEVELOPMENT_TEAM = X6WK5UKJ63;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Task2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CryptoView;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
