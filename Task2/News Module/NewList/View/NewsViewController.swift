@@ -1,29 +1,26 @@
 //
-//  ExchangeViewController.swift
+//  NewsViewController.swift
 //  Task2
 //
-//  Created by Rufan Abdurahmanov on 20.04.22.
+//  Created by Rufan Abdurahmanov on 19.04.22.
 //
 
 import UIKit
 
-class ExchangesViewController: UIViewController {
-    
-    let viewModel = ExchangesViewModel()
-    let cellID = "\(ExchangeCollectionViewCell.self)"
-
+class NewsViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    let viewModel = NewsViewModel()
+    let cellID = "\(NewsCollectionViewCell.self)"
     override func viewDidLoad() {
-        view.backgroundColor = UIColor(red: 238/255, green: 237/255, blue: 241/255, alpha: 1)
-        collectionView.backgroundColor = .clear
         super.viewDidLoad()
-        title = "Exchanges"
+        
+        title = "News"
         collectionView.register(UINib(nibName: cellID, bundle: nil), forCellWithReuseIdentifier: cellID)
-        viewModel.getExchanges {
+        viewModel.getNews {
             self.collectionView.reloadData()
         }
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         let userInterfaceStyle = traitCollection.userInterfaceStyle
         if userInterfaceStyle == .dark {
@@ -34,6 +31,7 @@ class ExchangesViewController: UIViewController {
             collectionView.backgroundColor = .clear
         }
     }
+    
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         let userInterfaceStyle = traitCollection.userInterfaceStyle
         if userInterfaceStyle == .dark {
@@ -44,27 +42,26 @@ class ExchangesViewController: UIViewController {
             collectionView.backgroundColor = .clear
         }
     }
-
 }
 
-extension ExchangesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
+extension NewsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.numberOfExchanges()
+        viewModel.numberOfLines()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! ExchangeCollectionViewCell
-        cell.configure(exchange: viewModel.itemAtCell(index: indexPath.row))
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! NewsCollectionViewCell
+        cell.configure(news: viewModel.itemAtCell(index: indexPath.row))
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: (collectionView.bounds.width * 0.92), height: 44)
+        CGSize(width: collectionView.bounds.width * 0.92, height: 136)
     }
     
-    
-    
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let descriptionVC = storyboard?.instantiateViewController(withIdentifier: "\(DescriptionViewController.self)") as! DescriptionViewController
+        descriptionVC.newsDesc = viewModel.itemAtCell(index: indexPath.row)
+        navigationController?.show(descriptionVC, sender: nil)
+    }
 }

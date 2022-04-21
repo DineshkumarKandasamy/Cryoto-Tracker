@@ -1,33 +1,39 @@
 //
-//  ExchangeCollectionViewCell.swift
+//  CurrencyCollectionViewCell.swift
 //  Task2
 //
-//  Created by Rufan Abdurahmanov on 20.04.22.
+//  Created by Rufan Abdurahmanov on 21.04.22.
 //
 
 import UIKit
 
-class ExchangeCollectionViewCell: UICollectionViewCell {
+class CurrencyCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak private var imageView: UIImageView!
     @IBOutlet weak private var nameLabel: UILabel!
+    @IBOutlet weak private var priceLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
     override func layoutSubviews() {
         layer.cornerRadius = 10
-        
         let userInterfaceStyle = traitCollection.userInterfaceStyle
         if userInterfaceStyle == .dark {
             backgroundColor = UIColor(red: 32/255, green: 33/255, blue: 36/255, alpha: 1)
             nameLabel.textColor = .white
+            priceLabel.textColor = .white
         } else {
             backgroundColor = .white
             nameLabel.textColor = .black
+            priceLabel.textColor = .black
         }
     }
-        
-    func configure(exchange: String) {
-        nameLabel.text = "   \(exchange)"
+    
+    func configure(currency: Currency) {
+        imageView.loadImage(imageURL: currency.imageURL)
+        nameLabel.text = currency.name
+        let price = String(format: "%.2f", currency.rate)
+        priceLabel.text = "\(currency.symbol)\(price)"
     }
+
 }

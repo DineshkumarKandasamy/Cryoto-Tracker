@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewsCollectionViewCell" customModule="Task2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="472" height="136"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Arq-So-nqZ">
+                        <rect key="frame" x="344" y="8" width="120" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="UF2-pR-lKY"/>
+                            <constraint firstAttribute="height" constant="120" id="wsY-FP-NQT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reddit r/btc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWc-Ct-tng">
+                        <rect key="frame" x="8" y="8" width="328" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntu-Zv-2Lm">
+                        <rect key="frame" x="8" y="32.5" width="332" height="99.5"/>
+                        <string key="text">Lucky Cosmetics St Kitts Accepts BitcoinCash .. with locations in a few islands ..beauty &amp; cosmetics now can be shopped with BCH</string>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="tWc-Ct-tng" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="2lg-sJ-qcg"/>
+                <constraint firstItem="Arq-So-nqZ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="CvP-b9-ncf"/>
+                <constraint firstItem="Ntu-Zv-2Lm" firstAttribute="leading" secondItem="tWc-Ct-tng" secondAttribute="leading" id="Dak-sg-a8P"/>
+                <constraint firstItem="Arq-So-nqZ" firstAttribute="leading" secondItem="Ntu-Zv-2Lm" secondAttribute="trailing" constant="4" id="G2G-kY-v3q"/>
+                <constraint firstAttribute="trailing" secondItem="Arq-So-nqZ" secondAttribute="trailing" constant="8" id="IgP-Hd-KT9"/>
+                <constraint firstItem="Arq-So-nqZ" firstAttribute="leading" secondItem="tWc-Ct-tng" secondAttribute="trailing" constant="8" id="VsV-pW-Ohz"/>
+                <constraint firstItem="Ntu-Zv-2Lm" firstAttribute="top" secondItem="tWc-Ct-tng" secondAttribute="bottom" constant="4" id="lLf-42-DJT"/>
+                <constraint firstItem="tWc-Ct-tng" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="pJf-9u-Bmz"/>
+                <constraint firstAttribute="bottom" secondItem="Ntu-Zv-2Lm" secondAttribute="bottom" constant="4" id="rGE-To-SRj"/>
+                <constraint firstItem="Ntu-Zv-2Lm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="s01-VY-Eh7"/>
+            </constraints>
+            <size key="customSize" width="472" height="136"/>
+            <connections>
+                <outlet property="imageView" destination="Arq-So-nqZ" id="s93-oG-rd8"/>
+                <outlet property="resourceLabel" destination="tWc-Ct-tng" id="fIn-aP-rmZ"/>
+                <outlet property="titleLabel" destination="Ntu-Zv-2Lm" id="rEU-nK-Hcd"/>
+            </connections>
+            <point key="canvasLocation" x="218.84057971014494" y="62.946428571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
