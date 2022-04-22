@@ -20,9 +20,7 @@ class ExchangesViewController: UIViewController {
         super.viewDidLoad()
         title = "Exchanges"
         collectionView.register(UINib(nibName: cellID, bundle: nil), forCellWithReuseIdentifier: cellID)
-        viewModel.getExchanges {
-            self.collectionView.reloadData()
-        }
+        getExchanges()
     }
     override func viewWillAppear(_ animated: Bool) {
         let userInterfaceStyle = traitCollection.userInterfaceStyle
@@ -44,6 +42,12 @@ class ExchangesViewController: UIViewController {
             collectionView.backgroundColor = .clear
         }
     }
+    
+    func getExchanges() {
+        viewModel.getExchanges {
+            self.collectionView.reloadData()
+        }
+    }
 
 }
 
@@ -63,8 +67,6 @@ extension ExchangesViewController: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: (collectionView.bounds.width * 0.92), height: 44)
     }
-    
-    
     
     
 }

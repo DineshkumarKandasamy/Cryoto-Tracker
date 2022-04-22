@@ -16,9 +16,7 @@ class NewsViewController: UIViewController {
         
         title = "News"
         collectionView.register(UINib(nibName: cellID, bundle: nil), forCellWithReuseIdentifier: cellID)
-        viewModel.getNews {
-            self.collectionView.reloadData()
-        }
+        getNews()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -42,6 +40,11 @@ class NewsViewController: UIViewController {
             collectionView.backgroundColor = .clear
         }
     }
+    func getNews() {
+        viewModel.getNews {
+            self.collectionView.reloadData()
+        }
+    }
 }
 
 extension NewsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -63,5 +66,11 @@ extension NewsViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let descriptionVC = storyboard?.instantiateViewController(withIdentifier: "\(DescriptionViewController.self)") as! DescriptionViewController
         descriptionVC.newsDesc = viewModel.itemAtCell(index: indexPath.row)
         navigationController?.show(descriptionVC, sender: nil)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.item == viewModel.numberOfLines()-1 {
+            getNews()
+        }
     }
 }

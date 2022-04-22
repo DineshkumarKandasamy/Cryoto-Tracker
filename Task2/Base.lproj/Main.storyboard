@@ -151,7 +151,7 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Open in Safari"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -294,11 +294,13 @@
             </objects>
             <point key="canvasLocation" x="1716" y="-297"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Wallet-->
         <scene sceneID="ql0-4B-Qq3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EKn-rU-jbn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="coloncurrencysign.square.fill" catalog="system" id="eaL-50-aZH"/>
+                    <tabBarItem key="tabBarItem" title="Wallet" image="coin-wallet3" id="eaL-50-aZH">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cl6-BQ-f5G">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -374,7 +376,7 @@
     <resources>
         <image name="arrow.left.arrow.right.square.fill" catalog="system" width="128" height="114"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="98"/>
-        <image name="coloncurrencysign.square.fill" catalog="system" width="128" height="114"/>
+        <image name="coin-wallet3" width="36" height="36"/>
         <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

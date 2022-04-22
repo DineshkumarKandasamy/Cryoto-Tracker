@@ -11,14 +11,24 @@ class NewsViewModel {
     
     var newsList = [NewsElement]()
     
-    func getNews(complete: @escaping()->()) {
-        let path = "/news"
-        let skip = 0
-        let limit = 20
-        
-        WebService.shared.getNews(path: path, skip: skip, limit: limit) { newsList in
-            self.newsList = newsList
-            complete()
+    let path = "/news"
+    var skip = 0
+    let limit = 10
+    var isFetching = false
+    
+    func getNews(complete: @escaping()->()) {        
+        if !isFetching {
+            WebService.shared.getNews(path: path, skip: skip, limit: limit) { [unowned self] newsList in
+                self.skip += 1
+                if !newsList.isEmpty {
+                    for newsList in newsList {
+                        self.newsList.append(newsList)
+                    }
+                } else {
+                    self.isFetching = true
+                }
+                complete()
+            }
         }
     }
     

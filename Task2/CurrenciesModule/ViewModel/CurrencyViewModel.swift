@@ -13,7 +13,7 @@ class CurrencyViewModel {
     
     func getCurrencies(completion: @escaping()->()){
         let path = "/fiats"
-        WebService.shared.getCurrencies(path: path) { currencyList in
+        WebService.shared.getCurrencies(path: path) { [unowned self] currencyList in
             self.currencyList = currencyList
             completion()
         }
