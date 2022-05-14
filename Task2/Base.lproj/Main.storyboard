@@ -190,10 +190,10 @@
             </objects>
             <point key="canvasLocation" x="2453.6231884057975" y="407.8125"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tabbar Controller-->
         <scene sceneID="Fyw-kF-Yut">
             <objects>
-                <tabBarController id="P6G-Bs-i4Q" sceneMemberID="viewController">
+                <tabBarController id="P6G-Bs-i4Q" customClass="TabbarController" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L0Q-pI-hDp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -294,11 +294,11 @@
             </objects>
             <point key="canvasLocation" x="1716" y="-297"/>
         </scene>
-        <!--Wallet-->
+        <!--Coins-->
         <scene sceneID="ql0-4B-Qq3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EKn-rU-jbn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Wallet" image="coin-wallet3" id="eaL-50-aZH">
+                    <tabBarItem key="tabBarItem" title="Coins" image="coin-wallet3" id="eaL-50-aZH">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>

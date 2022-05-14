@@ -12,10 +12,10 @@ class ExchangesViewModel {
     
     var exchangeList = [String]()
     
-    let path = "/exchanges"
+
     
     func getExchanges(complete: @escaping()->()) {
-        WebService.shared.getExchanges(path: path) { [unowned self] exchangeList in
+        WebService.shared.getExchanges() { [unowned self] exchangeList in
             self.exchangeList = exchangeList
             complete()
         }

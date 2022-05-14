@@ -9,6 +9,7 @@ import UIKit
 
 class CurrenciesViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    //let refreshControl = UIRefreshControl()
     let cellID = "\(CurrencyCollectionViewCell.self)"
     let viewModel = CurrencyViewModel()
     
@@ -19,8 +20,10 @@ class CurrenciesViewController: UIViewController {
         viewModel.getCurrencies {
             self.collectionView.reloadData()
         }
+        //addRefreshControll()
     }
     override func viewWillAppear(_ animated: Bool) {
+        //addRefreshControll()
         let userInterfaceStyle = traitCollection.userInterfaceStyle
         if userInterfaceStyle == .dark {
             view.backgroundColor = .black
@@ -41,7 +44,19 @@ class CurrenciesViewController: UIViewController {
         }
     }
     
-
+//    func addRefreshControll() {
+//        refreshControl.tintColor = .gray
+//        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+//
+//        collectionView.addSubview(refreshControl)
+//    }
+//    @objc func refreshData() {
+//        viewModel.getCurrencies {
+//            self.collectionView.reloadData()
+//        }
+//        refreshControl.endRefreshing()
+//        self.collectionView.reloadData()
+//    }
 
 }
 

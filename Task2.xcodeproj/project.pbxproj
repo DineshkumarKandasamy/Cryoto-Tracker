@@ -25,6 +25,8 @@
 		5CBC7390280D571500E1A6C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBC738E280D571500E1A6C2 /* Main.storyboard */; };
 		5CBC7392280D571500E1A6C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CBC7391280D571500E1A6C2 /* Assets.xcassets */; };
 		5CBC7395280D571500E1A6C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBC7393280D571500E1A6C2 /* LaunchScreen.storyboard */; };
+		5CE3B37928129E55000F5AE4 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B37828129E55000F5AE4 /* WebServiceManager.swift */; };
+		5CE3B37B2812CDEC000F5AE4 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3B37A2812CDEC000F5AE4 /* TabbarController.swift */; };
 		5CEEBB68280FE463001CD576 /* CurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEBB67280FE463001CD576 /* CurrenciesViewController.swift */; };
 		5CEEBB6F280FF6C8001CD576 /* ExchangesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEBB6E280FF6C8001CD576 /* ExchangesViewController.swift */; };
 		5CEEBB71280FF836001CD576 /* ExchangesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEEBB70280FF836001CD576 /* ExchangesModel.swift */; };
@@ -68,6 +70,8 @@
 		5CBC7391280D571500E1A6C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CBC7394280D571500E1A6C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CBC7396280D571500E1A6C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CE3B37828129E55000F5AE4 /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		5CE3B37A2812CDEC000F5AE4 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		5CEEBB67280FE463001CD576 /* CurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewController.swift; sourceTree = "<group>"; };
 		5CEEBB6E280FF6C8001CD576 /* ExchangesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesViewController.swift; sourceTree = "<group>"; };
 		5CEEBB70280FF836001CD576 /* ExchangesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesModel.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				5C0F9385280D8C3B00652C1C /* WebService.swift */,
+				5CE3B37828129E55000F5AE4 /* WebServiceManager.swift */,
 				5C0F9387280D8ECA00652C1C /* NetworkRequest.swift */,
 			);
 			path = Service;
@@ -222,6 +227,7 @@
 			children = (
 				5CBC7388280D571500E1A6C2 /* AppDelegate.swift */,
 				5CBC738A280D571500E1A6C2 /* SceneDelegate.swift */,
+				5CE3B37A2812CDEC000F5AE4 /* TabbarController.swift */,
 				5C38F69F280EDE3600DB20EF /* Helper */,
 				5C0F9384280D8C2700652C1C /* Service */,
 				5CBC739D280D573700E1A6C2 /* Coin Module */,
@@ -558,6 +564,7 @@
 				5C0F938A280DA09F00652C1C /* CoinsViewModel.swift in Sources */,
 				5CEEBB77280FFD6D001CD576 /* ExchangeCollectionViewCell.swift in Sources */,
 				5C38F6A1280EDE4900DB20EF /* Extensions.swift in Sources */,
+				5CE3B37928129E55000F5AE4 /* WebServiceManager.swift in Sources */,
 				5CFD82C32810ABF300AE9370 /* CurrencyModel.swift in Sources */,
 				5CF6A645280F29B000E8806B /* NewsModel.swift in Sources */,
 				5CBC738D280D571500E1A6C2 /* CoinsViewController.swift in Sources */,
@@ -573,6 +580,7 @@
 				5C38F69D280EA29500DB20EF /* CoinCollectionViewCell.swift in Sources */,
 				5C38F6AF280EEBCA00DB20EF /* MarketCollectionViewCell.swift in Sources */,
 				5C38F6AB280EE94D00DB20EF /* MarketViewModel.swift in Sources */,
+				5CE3B37B2812CDEC000F5AE4 /* TabbarController.swift in Sources */,
 				5CEEBB822810414B001CD576 /* DescriptionViewController.swift in Sources */,
 				5CFD82C52810AC0A00AE9370 /* CurrencyViewModel.swift in Sources */,
 				5CFD82C92810AF7300AE9370 /* CurrencyCollectionViewCell.swift in Sources */,

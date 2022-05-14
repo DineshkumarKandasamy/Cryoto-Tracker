@@ -19,7 +19,7 @@ class CurrencyCollectionViewCell: UICollectionViewCell {
         layer.cornerRadius = 10
         let userInterfaceStyle = traitCollection.userInterfaceStyle
         if userInterfaceStyle == .dark {
-            backgroundColor = UIColor(red: 32/255, green: 33/255, blue: 36/255, alpha: 1)
+            backgroundColor = UIColor(red: 44/255, green: 44/255, blue: 46/255, alpha: 0.8)
             nameLabel.textColor = .white
             priceLabel.textColor = .white
         } else {

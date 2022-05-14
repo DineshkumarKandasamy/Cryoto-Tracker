@@ -11,14 +11,14 @@ class NewsViewModel {
     
     var newsList = [NewsElement]()
     
-    let path = "/news"
+
     var skip = 0
     let limit = 10
     var isFetching = false
     
     func getNews(complete: @escaping()->()) {        
         if !isFetching {
-            WebService.shared.getNews(path: path, skip: skip, limit: limit) { [unowned self] newsList in
+            WebService.shared.getNews(skip: skip, limit: limit) { [unowned self] newsList in
                 self.skip += 1
                 if !newsList.isEmpty {
                     for newsList in newsList {

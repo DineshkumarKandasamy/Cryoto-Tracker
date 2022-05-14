@@ -9,6 +9,7 @@ import UIKit
 
 class NewsViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    //let refreshControl = UIRefreshControl()
     let viewModel = NewsViewModel()
     let cellID = "\(NewsCollectionViewCell.self)"
     override func viewDidLoad() {
@@ -17,9 +18,11 @@ class NewsViewController: UIViewController {
         title = "News"
         collectionView.register(UINib(nibName: cellID, bundle: nil), forCellWithReuseIdentifier: cellID)
         getNews()
+        //addRefreshControll()
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        //addRefreshControll()
         let userInterfaceStyle = traitCollection.userInterfaceStyle
         if userInterfaceStyle == .dark {
             view.backgroundColor = .black
@@ -45,6 +48,18 @@ class NewsViewController: UIViewController {
             self.collectionView.reloadData()
         }
     }
+//    func addRefreshControll() {
+//        refreshControl.tintColor = .gray
+//        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+//
+//        collectionView.addSubview(refreshControl)
+//    }
+//    @objc func refreshData() {
+//        viewModel.skip = 0
+//        getNews()
+//        refreshControl.endRefreshing()
+//        self.collectionView.reloadData()
+//    }
 }
 
 extension NewsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
