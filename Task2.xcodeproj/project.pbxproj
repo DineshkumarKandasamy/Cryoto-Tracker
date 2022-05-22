@@ -368,7 +368,7 @@
 		5CF6A640280F296900E8806B /* News Module */ = {
 			isa = PBXGroup;
 			children = (
-				5CFD82CC2811367000AE9370 /* NewList */,
+				5CFD82CC2811367000AE9370 /* NewsList */,
 				5CEEBB7E281040F4001CD576 /* NewsDescription */,
 			);
 			path = "News Module";
@@ -408,14 +408,14 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
-		5CFD82CC2811367000AE9370 /* NewList */ = {
+		5CFD82CC2811367000AE9370 /* NewsList */ = {
 			isa = PBXGroup;
 			children = (
 				5CF6A641280F297900E8806B /* Model */,
 				5CF6A642280F298000E8806B /* View */,
 				5CF6A643280F298500E8806B /* ViewModel */,
 			);
-			path = NewList;
+			path = NewsList;
 			sourceTree = "<group>";
 		};
 		C8775FADF0F2CB25797B0483 /* Frameworks */ = {
@@ -750,7 +750,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -780,7 +780,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

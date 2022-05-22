@@ -9,7 +9,7 @@ import UIKit
 
 class NewsViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    //let refreshControl = UIRefreshControl()
+    let refreshControl = UIRefreshControl()
     let viewModel = NewsViewModel()
     let cellID = "\(NewsCollectionViewCell.self)"
     override func viewDidLoad() {
@@ -18,11 +18,10 @@ class NewsViewController: UIViewController {
         title = "News"
         collectionView.register(UINib(nibName: cellID, bundle: nil), forCellWithReuseIdentifier: cellID)
         getNews()
-        //addRefreshControll()
+        addRefreshControll()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //addRefreshControll()
         let userInterfaceStyle = traitCollection.userInterfaceStyle
         if userInterfaceStyle == .dark {
             view.backgroundColor = .black
@@ -43,23 +42,28 @@ class NewsViewController: UIViewController {
             collectionView.backgroundColor = .clear
         }
     }
-    func getNews() {
+    fileprivate func getNews() {
         viewModel.getNews {
             self.collectionView.reloadData()
+            self.refreshControl.endRefreshing()
         }
     }
-//    func addRefreshControll() {
-//        refreshControl.tintColor = .gray
-//        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
-//
-//        collectionView.addSubview(refreshControl)
-//    }
-//    @objc func refreshData() {
-//        viewModel.skip = 0
-//        getNews()
-//        refreshControl.endRefreshing()
-//        self.collectionView.reloadData()
-//    }
+    
+    //MARK: Refresh Control
+    
+    func addRefreshControll() {
+        refreshControl.tintColor = .gray
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        collectionView.addSubview(refreshControl)
+    }
+    
+    @objc func refreshData() {
+        viewModel.resetValues()
+        collectionView.reloadData()
+        Timer.scheduledTimer(withTimeInterval: 0.4, repeats: false) { [weak self] _ in
+            self?.getNews()
+        }
+    }
 }
 
 extension NewsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

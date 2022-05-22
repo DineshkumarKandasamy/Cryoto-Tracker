@@ -19,10 +19,9 @@ class DescriptionViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(red: 238/255, green: 237/255, blue: 241/255, alpha: 1)
-        
+        title = "\(newsDesc.source)"
         tableView.backgroundColor = .clear
         tableView.register(UINib(nibName: cellID, bundle: nil), forCellReuseIdentifier: cellID)
-//        tableView.reloadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,7 +39,6 @@ class DescriptionViewController: UIViewController {
         let userInterfaceStyle = traitCollection.userInterfaceStyle
         if userInterfaceStyle == .dark {
             view.backgroundColor = .black
-//            tableView.backgroundColor = .clear
             tableView.backgroundColor = UIColor(red: 32/255, green: 33/255, blue: 36/255, alpha: 1)
         } else {
             view.backgroundColor = UIColor(red: 238/255, green: 237/255, blue: 241/255, alpha: 1)

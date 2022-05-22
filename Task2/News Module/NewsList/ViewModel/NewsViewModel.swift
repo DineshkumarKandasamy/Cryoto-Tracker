@@ -32,6 +32,12 @@ class NewsViewModel {
         }
     }
     
+    func resetValues() {
+        skip = 0
+        isFetching = false
+        newsList.removeAll()
+    }
+    
     func numberOfLines() -> Int {
         return newsList.count
     }
