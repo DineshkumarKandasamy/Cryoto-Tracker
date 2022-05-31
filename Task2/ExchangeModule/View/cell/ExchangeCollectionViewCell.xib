@@ -16,9 +16,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="325" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jci-bZ-zbz">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jci-bZ-zbz">
                         <rect key="frame" x="0.0" y="0.0" width="325" height="50"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -26,6 +25,12 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Jci-bZ-zbz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JX3-CE-n2I"/>
+                <constraint firstItem="Jci-bZ-zbz" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="YCo-Cr-Zi6"/>
+                <constraint firstItem="Jci-bZ-zbz" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="nx8-7d-flO"/>
+                <constraint firstItem="Jci-bZ-zbz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wMF-2Y-2RM"/>
+            </constraints>
             <size key="customSize" width="325" height="50"/>
             <connections>
                 <outlet property="nameLabel" destination="Jci-bZ-zbz" id="QcB-4N-Goo"/>

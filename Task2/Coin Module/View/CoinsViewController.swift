@@ -1,24 +1,26 @@
 //
-//  NewsViewController.swift
+//  ViewController.swift
 //  Task2
 //
-//  Created by Rufan Abdurahmanov on 19.04.22.
+//  Created by Rufan Abdurahmanov on 18.04.22.
 //
 
 import UIKit
 
-class NewsViewController: UIViewController {
+class CoinsViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
     let refreshControl = UIRefreshControl()
-    let viewModel = NewsViewModel()
-    let cellID = "\(NewsCollectionViewCell.self)"
-    
+    let cellID = "\(CoinCollectionViewCell.self)"
+    let viewModel = CoinsViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "News"
+    
+        title = "Coins"
         collectionView.register(UINib(nibName: cellID, bundle: nil), forCellWithReuseIdentifier: cellID)
-        getNews()
+        
+        getCoins()
         addRefreshControll()
     }
     
@@ -31,16 +33,11 @@ class NewsViewController: UIViewController {
             view.backgroundColor = UIColor(red: 238/255, green: 237/255, blue: 241/255, alpha: 1)
             collectionView.backgroundColor = .clear
         }
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: "coinTabSelected"), object: nil, queue: nil) { [weak self] _ in
+            self?.collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: true)
+        }
     }
-    
-//    var imageCache = NSCache<AnyObject, AnyObject>()
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        imageCache.removeAllObjects()
-//        // Dispose of any resources that can be recreated.
-//    }
-    
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         let userInterfaceStyle = traitCollection.userInterfaceStyle
         if userInterfaceStyle == .dark {
@@ -52,10 +49,10 @@ class NewsViewController: UIViewController {
         }
     }
     
-    fileprivate func getNews() {
-        viewModel.getNews {
-                self.collectionView.reloadData()
-                self.refreshControl.endRefreshing()
+    fileprivate func getCoins() {
+        viewModel.getCoins {
+            self.collectionView.reloadData()
+            self.refreshControl.endRefreshing()
         }
     }
     
@@ -71,35 +68,35 @@ class NewsViewController: UIViewController {
         viewModel.resetValues()
         collectionView.reloadData()
         Timer.scheduledTimer(withTimeInterval: 0.4, repeats: false) { [weak self] _ in
-            self?.getNews()
+            self?.getCoins()
         }
     }
 }
 
-extension NewsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension CoinsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        viewModel.numberOfLines()
+        viewModel.numberOfRowsInSection()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! NewsCollectionViewCell
-        cell.configure(news: viewModel.itemAtCell(index: indexPath.row))
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! CoinCollectionViewCell
+        cell.configure(coin: viewModel.itemsAtCell(index: indexPath.row)!)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: collectionView.bounds.width * 0.92, height: 136)
+        CGSize(width: collectionView.bounds.width * 0.92, height: 64)
     }
-    
+        
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let descriptionVC = storyboard?.instantiateViewController(withIdentifier: "\(DescriptionViewController.self)") as! DescriptionViewController
-        descriptionVC.newsDesc = viewModel.itemAtCell(index: indexPath.row)
-        navigationController?.show(descriptionVC, sender: nil)
+        let marketVC = storyboard?.instantiateViewController(withIdentifier: "MarketViewController") as! MarketViewController
+        marketVC.viewModel.coinId = viewModel.itemsAtCell(index: indexPath.row)?.name.lowercased().replace()
+        navigationController?.show(marketVC, sender: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.item == viewModel.numberOfLines()-1 {
-            getNews()
+        if indexPath.item == viewModel.numberOfRowsInSection()-1 {
+            getCoins()
         }
     }
 }
