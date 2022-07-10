@@ -14,6 +14,7 @@ I developed **Crypto Tracker App** in order to learn CollectionView, Alamofire a
  - [x] - MVVM Pattern
  - [x] - Web services
  - [x] - Refresh Control
+ - [x] - Pagination
  - [x] - Safari View Controller
 
  
